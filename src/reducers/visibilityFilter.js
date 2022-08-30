@@ -1,8 +1,6 @@
-import { SHOW_ALL } from '../actions/actions'
+import { SHOW_ALL } from '../actions/actions';
 
-//L'objectif étant de montrer comment combiner plusieurs reducers avec la méthode combineReducers 
-
-function visibilityReducer(visibility = SHOW_ALL, action) {
+function visibilityFilter(visibility = SHOW_ALL, action) {
   switch (action.type) {
     case SHOW_ALL:
       return SHOW_ALL;
@@ -12,4 +10,4 @@ function visibilityReducer(visibility = SHOW_ALL, action) {
   }
 }
 
-export default visibilityReducer
+export default visibilityFilter;

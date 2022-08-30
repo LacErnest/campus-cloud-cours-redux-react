@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { addNote } from '../redux/actions/actions';
+import { addNote } from '../actions/actions';
 
 class NotesForm extends Component {
   constructor(props) {
